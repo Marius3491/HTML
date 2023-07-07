@@ -1,0 +1,32 @@
+
+Moverse por este sitio
+
+Página principal
+Alta en el sistema
+Empresas gestionadas
+css-cheatsheet.pdf
+
+Alta en el sistema
+
+Recogida Datos
+
+Página web de su empresa
+
+Seleccione pack de su elección
+Tutorial HTML
+Tutorial CSS
+Tutorial JavaScript
+
+Teléfono móvil de contacto
+(formato debe ser 9 números)
+
+Ingresos anuales de la empresa
+
+Comentarios (máximo 200 caracteres)
+
+Valore la web de 0 a 10
+
+
+Acepto las condiciones legales (obligatorio)
+Acepto recibir publicidad
+

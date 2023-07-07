@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altas</title>
+</head>
+<body>
+    <h2>Moverse por este sitio</h2>
+    <nav>
+    <ol>
+        <a href="../../index.html"><li>Página principal</li></a>
+        <a href="altas.html"><li>Alta en el sistema</li>
+        </a>
+        <a href="../../resultados/tabla.html"><li>Empresas gestionadas</li>
+        </a>
+        <a href="../../docs/empresa/css-cheatsheet.pdf" target="_blank"><li>css-cheatsheet.pdf</li>
+        </a>
+    </ol>
+    </nav>
+    <h1>Alta en el sistema</h1>
+    <form action="/apps/cursos.php" method="post">
+<fieldset>
+    <legend>Recogida Datos</legend>
+<p>
+    <label for="url">Página web de su empresa</label><br>
+    <input type="url" name="url" id="url" placeholder="http://local.com">
+</p>
+<p>
+    <input type="radio" name="curso" id="html"><label for="html">Tutorial HTML</label><br>
+    <input type="radio" name="curso" id="css"><label for="css">Tutorial CSS</label><br>
+    <input type="radio" name="curso" id="js" checked><label for="js">Tutorial JavaScript</label>
+</p>
+<p>
+    <label for="tel">Teléfono móvil de contacto</label><br>
+    <input type="text" name="pattern" pattern="[0-9]{9}" id="tel"><em>(formato debe ser 9 números)</em>
+</p>
+<p>
+    <label for="ingreso">Ingresos anuales de la empresa</label><br>
+    <input type="number" name="number-decimal" id="ingreso" step="any">
+</p>
+<p>
+    <label for="comentario">Comentarios (máximo 200 caracteres)</label><br>
+    <textarea name="comentario" id="comentario" cols="100" rows="10" maxlength="200"></textarea>
+</p>
+<p>
+    <label for="valor">Valore la web de 0 a 10</label><br>
+    <input type="range" name="range" id="valor" min="" max="10" step="1" value="10">
+</p>
+<p>
+    <input type="checkbox" name="condicion" id="condicion" value="acepta" required><label for="condicion">Acepto las condiciones legales (obligatorio)</label><br>
+
+    <input type="checkbox" name="publi" id="publi"><label for="publi">Acepto recibir publicidad</label>
+</p>
+</fieldset>
+    <input type="submit" value="Comprar">
+    <input type="reset" value="Borrar Datos">
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+Moverse por este sitio
+
+Página principal
+Alta en el sistema
+Empresas gestionadas
+css-cheatsheet.pdf
+
+Empresas gestionadas
+empresas
+
+Instrucciones para este apartado:
+
+Justo encima tiene una imagen con los resultados: no la borre.
+Debajo de estas instruciones deberá codificar una tabla HTML
+La tabla HTML debe ser equivalente en cuanto a la información que se muestra (no lo será en la presentación, eso ya llegará con CSS).

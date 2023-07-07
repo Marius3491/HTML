@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+</head>
+<body>
+    <h2>Moverse por este sitio</h2>
+    <nav>
+    <ol>
+        <a href="../index.html"><li>Página principal</li></a>
+        <a href="../gestion/soporte/altas.html"><li>Alta en el sistema</li>
+        </a>
+        <a href="tabla.html"><li>Empresas gestionadas</li>
+        </a>
+        <a href="../docs/empresa/css-cheatsheet.pdf" target="_blank"><li>css-cheatsheet.pdf</li>
+        </a>
+    </ol>
+    </nav>
+    <h1>Empresas gestionadas</h1>
+    <img src="../recursos/tabla_empresas.png" alt="empresas" width="800" height="163">
+    <p><strong>Instrucciones para este apartado:</strong></p>
+    <ul>
+        <li>Justo encima tiene una imagen con los resultados: no la borre.</li>
+        <li>Debajo de estas instruciones deberá codificar una tabla HTML</li>
+        <li>La tabla HTML debe ser equivalente en cuanto a la información que se muestra (no lo será en la presentación, eso ya llegará con CSS).</li>
+    </ul>
+<table border="1">
+<thead>
+<th scope="col">Empresa</th>
+<th scope="col">Descripcion</th>
+<th scope="col">Localidad</th>
+<th scope="col">Disponibilidad</th>
+<th scope="col">Fines de Semana</th>
+<th scope="col">Valoracion</th>
+</thead>
+<tbody>
+<tr>
+    <td>Cupones Toledo</td>
+    <td>Juegos de azar</td>
+    <td colspan="2"><strong>Sin datos actualizados</strong></td>
+    <td>Si</td>
+    <td rowspan="3">7</td>
+</tr>
+<tr>
+    <td>Gigante Mental</td>
+    <td>Videojuegos</td>
+    <td>Jerez</td>
+    <td>24 horas</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Telares Maria</td>
+    <td>Moda</td>
+    <td>Madrid</td>
+    <td>9:00 a 18:00</td>
+    <td>Si</td>
+</tr>
+<tr>
+    <td>Jamones Ademan</td>
+    <td rowspan="2">Alimentacion</td>
+    <td>Valencia</td>
+    <td colspan="2" rowspan="2"><strong>Sin datos actualizados</strong></td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>Gourmet Sebastiano</td>
+    <td>Algar</td>
+    <td>5</td>
+</tr>
+</tbody>
+</table>
+    
+</body>
+</html>

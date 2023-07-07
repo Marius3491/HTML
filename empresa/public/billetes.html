@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetes</title>
+</head>
+<body>
+    <h2>Cómo movernos por este sitio web</h2>
+<nav>
+    <ul>
+        <li><a href="../../index.html">Index</a>: navieras</li>
+        <li><a href="billetes.html">Billetes</a>: venta</li>
+        <li><a href="../viaje.html">Viaje</a>: un ejemplo</li>
+        <li><a href="docs/empresa.html">Empresa</a>: sobre nosotros</li>
+    </ul>
+</nav>
+<h1>Venta billetes</h1>
+<form action="/apps/php/ventas.php" method="post" target="_self">
+    <fieldset>
+        <legend>Datos acceso</legend>
+        <div>
+            <label for="email">Usuario</label><br>
+            <input type="email" name="email" id="email" placeholder="email">
+        </div>
+        <div>
+            <label for="password">Contraseña</label><br>
+            <input type="password" name="password" id="password" minlength="10"> * longitud mínima 10 caracteres
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Datos Compra</legend>
+        <div>
+            <label for="number">Nº de personas que viajan (grupos máximo de 4)</label>
+            <input type="number" name="number" id="number" min="1" max="4" value="1"><br>
+            <label for="date">Fecha del viaje </label><input type="date" name="date" id="date" value="2022-11-25">
+        </div>
+        <div>
+            <label for="tipo">Seleccione tipo camarote</label><br>
+            <input type="radio" name="tipo" id="basico" value="basico">Básico 
+            <input type="radio" name="tipo" id="superior" value="superior" checked>Superior 
+            <input type="radio" name="tipo" id="suite" value="suite">Suite
+        </div>
+        <div>
+            <label for="menu">Seleccione el tipo de menú (las opciones se le indican en las instrucciones)</label><br>
+            <select name="menu" id="menu">
+                <option value="sde">sin definir</option>
+                <option value="des">Desayuno</option>
+                <option value="desce">Desayuno y cena</option>
+                <option value="deco">Desayuno y comida</option>
+                <option value="toin">Todo incluido</option>
+            </select>
+        </div>
+        <div>
+            <label for="card">Tarjeta de crédito ** Formato: la cadena ES seguida de 1 grupo de 4 dígitos y 1 grupo de 4 letras separados por un espacio en blanco. Ejemplo: ES 1234 aBcD</label><br>
+            <input type="text" name="card" id="card" pattern="ES[ ][0-9]{4}[ ][a-zA-Z]{4}" placeholder="ES 1234 aBcD">
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="agreement" value="acepta" required> Acepto las condiciones legales (**obligatorio)
+            </label>
+        </div>
+    </fieldset>
+
+    <input type="submit" value="Comprar">
+    <input type="reset" value="Borrar Datos">
+</form>
+</body>
+</html>
